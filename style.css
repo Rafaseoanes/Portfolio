@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #F8FAFF;
+}
+
+nav{
+    position: relative;
+    padding: 30px 190px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E6E4FF;
+    z-index: 5;
+}
+nav ul{
+    margin: 10px 30px 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    color: #675791;
+    margin: 10px 30px 10px 0;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 700;
+}
+.logo{
+    color: #675791;
+    margin: 10px 0px 10px 30px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 700;
+}
+nav ul li a:hover{
+    color: #786EFA;
+
+}
+.logo:hover{
+    color: #786EFA;
+}
+.heroSection{
+    height: 90vh;
+}
+.heroBackground{
+    height: 100%;
+    background-color: #E6E4FF;
+    transform-origin: top left;
+    transform: skewY(-10deg);
+    
+}
+
+.skillsSection{
+    height: 75vh;
+    background-color: #F8FAFF;
+}
+.projectsSection{
+    height: 90vh;
+    background-color: #fff;
+}
+#larry{
+    position: absolute;
+    height: 70vh;
+    left: 14%;
+    top: 12%; 
+    z-index: 2;
+}
+.heroSection h1{
+    position: absolute;
+    left: 40%;
+    top: 38%;
+    margin-left: 100px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    color: #675791;
+    z-index: 2;
+
+}
+.heroSection h3{
+    position: absolute;
+    width: 703px;
+    height: 145px;
+    left: 40%;
+    top: 47%;
+    margin-left: 100px;
+    margin-top: 14px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 29px;
+    color: #675791;
+    z-index: 2;
+}
