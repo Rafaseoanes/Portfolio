@@ -30,6 +30,10 @@ nav ul li a{
     font-size: x-large;
     font-weight: 700;
 }
+nav ul li a:hover{
+    color: #786EFA;
+
+}
 .logo{
     color: #675791;
     margin: 10px 0px 10px 30px;
@@ -37,10 +41,7 @@ nav ul li a{
     font-size: x-large;
     font-weight: 700;
 }
-nav ul li a:hover{
-    color: #786EFA;
 
-}
 .logo:hover{
     color: #786EFA;
 }
@@ -52,17 +53,15 @@ nav ul li a:hover{
     background-color: #E6E4FF;
     transform-origin: top left;
     transform: skewY(-10deg);
-    
+    object-fit: none; 
 }
 
 .skillsSection{
-    height: 75vh;
+    padding-top: 6vh;
+    height: 65vh;
     background-color: #F8FAFF;
 }
-.projectsSection{
-    height: 90vh;
-    background-color: #fff;
-}
+
 #larry{
     position: absolute;
     height: 70vh;
@@ -105,4 +104,68 @@ nav ul li a:hover{
     line-height: 29px;
     color: #675791;
     z-index: 2;
+}
+.skillsSection h3 {
+   text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: x-large;
+    color: #675791;
+}
+.skillsSection h2{
+    text-align: center;
+    margin-top: 6vh;
+    font-weight: 400;
+    font-size: 21px;
+    color: #675791;
+    padding: 0 20vw;
+}
+.skillsIcons{
+    margin-top: 16vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 20vw;
+}
+.projectCards{
+    
+    width: 292px;
+    height: 350px;
+    background: #FFFFFF;
+    border: 0.5px solid #EFEFEF;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.07);
+    border-radius: 11px;
+    transition: all 0.3s ease 0s;
+}
+.projectsSection h3 {
+    text-align: center;
+     margin-top: 10px;
+     font-weight: 700;
+     font-size: x-large;
+     color: #675791;
+ }
+ .projectsSection{
+    padding-top: 4vh;
+    height: 90vh;
+    background-color: #fff;
+    
+}
+.projectCards:hover{
+    box-shadow: 0px 10px 27px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+
+}
+.cardsBox{
+    margin-top: 6vh;
+}
+.cards1{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 22vw;
+}
+.cards2{
+    margin-top: 6vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 22vw;
 }
