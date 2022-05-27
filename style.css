@@ -1,6 +1,7 @@
 *{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 body{
     background-color: #F8FAFF;
@@ -82,6 +83,15 @@ nav ul li a:hover{
     z-index: 2;
 
 }
+.heroSection h1 a{
+    color: #786EFA;
+}
+.animatedText{
+    margin-top: 59px;
+    margin-left: 100px;
+
+}
+
 .heroSection h3{
     position: absolute;
     width: 703px;
@@ -89,7 +99,7 @@ nav ul li a:hover{
     left: 40%;
     top: 47%;
     margin-left: 100px;
-    margin-top: 14px;
+    margin-top: 20px;
     font-weight: 400;
     font-size: 21px;
     line-height: 29px;
