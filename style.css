@@ -229,13 +229,23 @@ button {
   }
 
   .contactSection{
-      height: 60vh;
+      height: 35vh;
       padding-top: 5vh;
   }
   .contactSection h3 {
     text-align: center;
      margin-top: 10px;
+     margin-bottom: 5vh;
      font-weight: 700;
      font-size: x-large;
      color: #675791;
  }
+ .contactSection h2{
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 28px;
+    color: #675791;
+    padding: 0 20vw;
+    cursor: pointer;
+}
