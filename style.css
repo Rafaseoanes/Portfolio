@@ -58,8 +58,10 @@ nav ul li a:hover{
 
 .skillsSection{
     padding-top: 6vh;
-    height: 65vh;
+    height: 55vh;
     background-color: #F8FAFF;
+    
+   
 }
 
 #larry{
@@ -152,8 +154,8 @@ nav ul li a:hover{
      color: #675791;
  }
  .projectsSection{
-    padding-top: 3vh;
-    height: 95vh;
+    padding-top: 0;
+    height: 100vh;
     background-color: #fff;
 }
 .cardsBox{
@@ -231,15 +233,27 @@ button {
   .contactSection{
       height: 35vh;
       padding-top: 5vh;
+      
   }
-  .contactSection h3 {
+  .contactSection .contactTitle h3 {
     text-align: center;
-     margin-top: 10px;
      margin-bottom: 5vh;
      font-weight: 700;
      font-size: x-large;
-     color: #675791;
+     color: white;
+     
  }
+ .contactTitle{
+    height: 40px;
+    width: 290px;
+    background-color: #AAA4FF;
+    padding-top: 10px;
+    position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+    
+}
+
  .contactSection h2{
     text-align: center;
     margin-top: 1rem;
@@ -264,3 +278,34 @@ button {
     opacity: 1;
     transform: translateY(0);
   }
+
+  .shapes1{
+    
+    margin: 0px;
+  }
+  .shapes2{
+      
+    margin: 0;
+  }
+  .wraper{
+    margin-right: -25px;
+    margin-left: -25px;
+    display:flex ;
+    justify-content: space-between;
+  }
+ 
+  .darkPurple{
+    margin-top: 5px;
+      height: 40px;
+      width: 290px;
+      background-color: #AAA4FF;
+      transform: matrix(0.92, 0, 0.47, 1, 0, 0);
+  }
+  .lightPurple{
+      
+      margin-top: 5px;
+    height: 40px;
+    width: 260px;
+    background-color: #E6E4FF;
+    transform: matrix(0.92, 0, 0.47, 1, 0, 0);
+}
