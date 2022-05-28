@@ -129,8 +129,9 @@ nav ul li a:hover{
 }
 .projectCards{
     text-align: center;
-    width: 292px;
-    height: 350px;
+    width: 320px;
+    height: 390px;
+    padding: 20px;
     background: #FFFFFF;
     border: 0.5px solid #EFEFEF;
     box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.07);
@@ -145,33 +146,33 @@ nav ul li a:hover{
 }
 .projectsSection h3 {
     text-align: center;
-     margin-top: 10px;
+     margin-top: 15px;
      font-weight: 700;
      font-size: x-large;
      color: #675791;
  }
  .projectsSection{
-    padding-top: 4vh;
-    height: 90vh;
+    padding-top: 3vh;
+    height: 95vh;
     background-color: #fff;
 }
 .cardsBox{
     margin-top: 6vh;
 }
 .cardsBox img{
-    width: 260px;
+    width: 280px;
     margin-top: 15px;
 }
 .cards1{
     display: flex;
     justify-content: space-around;
-    padding: 0 22vw;
+    padding: 0 17vw;
 }
 .cards2{
     margin-top: 6vh;
     display: flex;
     justify-content: space-around;
-    padding: 0 22vw;
+    padding: 0 17vw;
 }
 .cardTitle{
     margin-top: 15px;
@@ -226,3 +227,15 @@ button {
     right: 0;
     opacity: 1;
   }
+
+  .contactSection{
+      height: 60vh;
+      padding-top: 5vh;
+  }
+  .contactSection h3 {
+    text-align: center;
+     margin-top: 10px;
+     font-weight: 700;
+     font-size: x-large;
+     color: #675791;
+ }
