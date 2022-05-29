@@ -23,31 +23,41 @@
 </head>
 
 <body>
-
-    <nav>
-        <a class="logo" href="#"> &#60;&#47;&#62; </a>
-        <ul>
-            <li><a href="#skills"> Skills </a></li>
-            <li><a href="#projects"> Projects </a></li>
-            <li><a href="#contact"> Contact </a></li>
-        </ul>
-    </nav>
+    <div class="navBar">
+        <nav>
+            <a class="logo" href="#"> &#60;&#47;&#62; </a>
+            <ul>
+                <li><a href="#skills"> Skills </a></li>
+                <li><a href="#projects"> Projects </a></li>
+                <li><a href="#contact"> Contact </a></li>
+                <li id="mobileMenu"><img src="./Imagenes/menu.png" alt=""></li>
+            </ul>
+        </nav>
+    </div>
     <!--//heroSection-->
+
     <section id="home" class="heroSection">
-        <img id="larry" src="https://i.ibb.co/QQg1CD1/larry.png" alt="Asset image">
-
-        <h1>Hi There! I'm Rafa,<br>
-            <h1 class="animatedText"> A
-                <a href="" class="typewrite" data-period="2000"
-                    data-type='[ "Front End Developer.", "Full Stack Developer.", "Photographer."]'>
-                    <span class="wrap"></span>
-                </a>
+        <div class="heroImg">
+            <img id="larry" src="https://i.ibb.co/2P7vxXX/larry.png" alt="Asset image">
+        </div>
+        <div class="heroTxt">
+            <h1>Hi There! I'm Rafa,<br>
+                <h1 class="animatedText"> A
+                    <a href="" class="typewrite" data-period="2000"
+                        data-type='[ "Front End Developer.", "Full Stack Developer.", "Photographer."]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h1>
             </h1>
-            <h3>Welcome to my portfolio! If you'd like to learn more about me and my work, please keep scrolling!</h3>
-            <div class="heroBackground">
+            <br>
+            <h3>Welcome to my portfolio! If you'd like to learn more about me and my work, please keep
+                scrolling!
+            </h3>
+        </div>
 
-            </div>
     </section>
+
+
 
     <!--//skillSection-->
 
@@ -71,8 +81,7 @@
     </section>
     <div class="shapes1">
         <div class="wraper">
-            <div id="leftLight" class="lightPurple"></div>
-            <div id="rightDark" class="darkPurple"></div>
+            <img src="./Imagenes/Izquiera.png" alt="">
         </div>
     </div>
     <!--//projectsSection-->
@@ -80,8 +89,7 @@
     <section id="projects" class="projectsSection">
         <div class="shapes2">
             <div class="wraper">
-                <div id="" class="darkPurple"></div>
-                <div id="" class="lightPurple"></div>
+                <img src="./Imagenes/Derecha.png" alt="">
             </div>
         </div>
         <h3>Projects</h3>
@@ -92,20 +100,26 @@
                     <h4 class="cardTitle">Neumorphic-Calculator</h4>
                     <br>
                     <p class="cardText">Neumorphic Calculator created with vanilla CSS, HTML and JavaScript</p>
-                    <button>
-                        <a target="_blank" href="https://github.com/Rafaseoanes/Neumorphic-Calculator.git">
-                            <span>More</span></a>
-                    </button>
+
+                    <a target="_blank" href="https://github.com/Rafaseoanes/Neumorphic-Calculator.git">
+                        <button>
+                            <span>More</span>
+                        </button>
+                    </a>
+
                 </div>
                 <div class="projectCards">
                     <img src="https://i.ibb.co/0BHYxby/Portfolio-Dev.png" alt="">
                     <h4 class="cardTitle">Portfolio</h4>
                     <br>
                     <p class="cardText">Landing created with vanilla CSS, HTML and JavaScript</p>
-                    <button>
-                        <a target="_blank" href="https://github.com/Rafaseoanes/Portfolio.git">
-                            <span>More</span></a>
-                    </button>
+
+                    <a target="_blank" href="https://github.com/Rafaseoanes/Portfolio.git">
+                        <button>
+                            <span>More</span>
+                        </button>
+                    </a>
+
                 </div>
                 <div class="projectCards">
                     <img src="https://i.ibb.co/fXWwcBZ/Tip-Calculator.jpg" alt="">
@@ -113,14 +127,15 @@
                     <br>
                     <p class="cardText">Work in progress! Tip Calculator created with vanilla CSS, HTML and JavaScript
                     </p>
-                    <button>
-                        <a target="_blank" href="https://github.com/Rafaseoanes/Tip-Calculator.git">
-                            <span>More</span></a>
-                    </button>
+                    <a target="_blank" href="https://github.com/Rafaseoanes/Tip-Calculator.git">
+                        <button>
+                            <span>More</span>
+                        </button>
+                    </a>
                 </div>
             </div>
 
-            <div id="breakUp"></div>
+
 
             <div class="cards2">
                 <div class="projectCards">
@@ -128,10 +143,12 @@
                     <h4 class="cardTitle">Portfolio</h4>
                     <br>
                     <p class="cardText">Landing created with vanilla CSS, HTML and JavaScript</p>
-                    <button>
-                        <a target="_blank" href="https://github.com/Rafaseoanes/Portfolio.git">
-                            <span>More</span></a>
-                    </button>
+
+                    <a target="_blank" href="https://github.com/Rafaseoanes/Portfolio.git">
+                        <button>
+                            <span>More</span>
+                        </button>
+                    </a>
                 </div>
                 <div class="projectCards">
                     <img src="https://i.ibb.co/fXWwcBZ/Tip-Calculator.jpg" alt="">
@@ -139,27 +156,31 @@
                     <br>
                     <p class="cardText">Work in progress! Tip Calculator created with vanilla CSS, HTML and JavaScript
                     </p>
-                    <button>
-                        <a target="_blank" href="https://github.com/Rafaseoanes/Tip-Calculator.git">
-                            <span>More</span></a>
-                    </button>
+
+                    <a target="_blank" href="https://github.com/Rafaseoanes/Tip-Calculator.git">
+                        <button>
+                            <span>More</span>
+                        </button>
+                    </a>
                 </div>
                 <div class="projectCards">
                     <img src="https://i.ibb.co/tsyZsXv/Git-Hub-Profile.png" alt="">
                     <h4 class="cardTitle">GitHub Pofile</h4>
                     <br>
                     <p class="cardText">Full stack web developer student with a passion for front end development</p>
-                    <button>
-                        <a target="_blank" href="https://github.com/Rafaseoanes">
-                            <span>More</span></a>
-                    </button>
+
+                    <a target="_blank" href="https://github.com/Rafaseoanes">
+                        <button>
+                            <span>More</span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!--//contactSection-->
-
+    <div id="breakUp"></div>
     <section id="contact" class="contactSection">
 
 
@@ -167,17 +188,19 @@
             <h3>Contact</h3>
         </div>
 
-        <h2> <a target="_blank" href="https://www.linkedin.com/in/rafael-seoanes/"><i class="fa-brands fa-linkedin"></i>
-                Linkedin</a> </h2>
-        <h2> <a target="_blank" href="https://github.com/Rafaseoanes"><i class="fa-brands fa-github-square"></i>
-                GitHub</a> </h2>
-        <h2> <a target="_blank" href="mailto:rafaseoanes9@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
-        </h2>
-        <h2> <a target="_blank" href="https://www.instagram.com/rafase0anes/"><i
-                    class="fa-brands fa-instagram-square"></i> Instagram</a> </h2>
-        <div class="upBtn">
-            <a class="scrollToTopBtn"><i class="fa-solid fa-circle-arrow-up"></i></a>
-        </div>
+        <div class="contactLinks">
+            <h2> <a target="_blank" href="https://www.linkedin.com/in/rafael-seoanes/"><i
+                        class="fa-brands fa-linkedin"></i>
+                    Linkedin</a> </h2>
+            <h2> <a target="_blank" href="https://github.com/Rafaseoanes"><i class="fa-brands fa-github-square"></i>
+                    GitHub</a> </h2>
+            <h2> <a target="_blank" href="mailto:rafaseoanes9@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            </h2>
+            <h2> <a target="_blank" href="https://www.instagram.com/rafase0anes/"><i
+                        class="fa-brands fa-instagram-square"></i> Instagram</a> </h2>
+            <div class="upBtn">
+                <a class="scrollToTopBtn"><i class="fa-solid fa-circle-arrow-up"></i></a>
+            </div>
     </section>
 
 
