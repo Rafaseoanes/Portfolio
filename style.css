@@ -388,16 +388,16 @@ button:hover::before {
         transition: transform 350ms ease-out;
     }
 
+    .navBar nav[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
     @supports (backdrop-filter: blur(1rem)) {
         .navBar nav {
             background: #110b4465;
             backdrop-filter: blur(1rem);
 
         }
-    }
-
-    .navBar nav[data-visible="true"] {
-        transform: translateX(0%);
     }
 
     .heroSection {
