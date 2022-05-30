@@ -86,3 +86,15 @@ let observer = new IntersectionObserver(callback);
 
 observer.observe(target);
 
+//mobile menu
+const navBar = document.querySelector('.navBarMenu');
+const navToggle = document.querySelector('.navToggle');
+
+navToggle.addEventListener('click', () => {
+    const show = navBar.getAttribute('data-visible')
+    if (show === "false") {
+        navBar.setAttribute('data-visible', true);
+    } else if (show === "true"){
+        navBar.setAttribute('data-visible', false);
+    }
+});

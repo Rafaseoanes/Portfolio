@@ -23,17 +23,20 @@
 </head>
 
 <body>
-    <div class="navBar">
-        <nav>
+
+    <div class="navBar"  >
+        <button class="navToggle" aria-controls="menuNav" id="mobileMenu"><img src="./Imagenes/menu.png" alt=""></button>
+        <nav class="navBarMenu" data-visible="false">
             <a class="logo" href="#"> &#60;&#47;&#62; </a>
-            <ul>
+            <ul id="menuNav" data-visible="true">
                 <li><a href="#skills"> Skills </a></li>
                 <li><a href="#projects"> Projects </a></li>
                 <li><a href="#contact"> Contact </a></li>
-                <li id="mobileMenu"><img src="./Imagenes/menu.png" alt=""></li>
+                <li>
             </ul>
         </nav>
     </div>
+
     <!--//heroSection-->
 
     <section id="home" class="heroSection">

@@ -9,6 +9,8 @@
 body {
     background-color: #F8FAFF;
 
+    /*correct things getting out of place*/
+    overflow-x: hidden !important;
 }
 
 nav {
@@ -48,6 +50,10 @@ nav ul li a:hover {
 #mobileMenu img {
     height: 35px;
 
+}
+
+.navToggle {
+    display: none;
 }
 
 .logo {
@@ -323,9 +329,9 @@ button:hover::before {
     margin: 0;
 }
 
+/*
 
-
-@media (max-width: 800px) {
+@media (max-width: 40rem) {
 
 
     .cards1 {
@@ -348,9 +354,13 @@ button:hover::before {
 
         font-size: 1rem;
     }
+    .heroSection h1 {
+
+        font-size: 2rem;
+    }
 
     #larry {
-        height: 40vh;
+        height: 45vh;
     }
 
     .skillsIcons {
@@ -363,4 +373,77 @@ button:hover::before {
     .skillsIcons img {
         width: 65px;
     }
+}*/
+
+@media (max-width: 40em) {
+    .navBar nav {
+        position: fixed;
+        inset: 0 0 0 30%;
+        background: #675791;
+        padding: 0 2em;
+        margin: 0;
+        z-index: 100;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    @supports (backdrop-filter: blur(1rem)) {
+        .navBar nav {
+            background: #110b4465;
+            backdrop-filter: blur(1rem);
+
+        }
+    }
+
+    .navBar nav[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .heroSection {
+        padding-top: 20%;
+    }
+
+    .logo {
+        display: none;
+
+    }
+
+    .navBar nav ul {
+
+        flex-direction: column;
+    }
+
+    .navBar nav ul li {
+
+        margin-bottom: 3em;
+    }
+
+    .navBar nav ul li a {
+
+        color: #F8FAFF;
+
+
+    }
+
+    .navToggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        z-index: 999;
+        background: none;
+        transform: skew(0deg);
+    }
+
+    .navToggle::before {
+
+        z-index: 999;
+        background: none;
+    }
+
+
+
+
+
 }
