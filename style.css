@@ -101,7 +101,7 @@ nav ul li a:hover {
     width: 115%;
     font-style: normal;
     font-weight: 600;
-    font-size: clamp(1.5rem, 2.5vw, 4rem);
+    font-size: clamp(1.8rem, 2.5vw, 4rem);
     ;
     color: #675791;
     z-index: 2;
@@ -115,7 +115,7 @@ nav ul li a:hover {
     width: 115%;
     margin-top: 20px;
     font-weight: 400;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     line-height: 29px;
     color: #675791;
     z-index: 2;
@@ -228,6 +228,7 @@ button {
     cursor: pointer;
     color: #675791;
     transform: skew(-21deg);
+
 }
 
 .projectsSection span {
@@ -362,27 +363,15 @@ button:hover::before {
     }
 
     .heroSection {
-
+        padding: 0 5%;
         background-position: center top;
         padding-top: 0;
-        height: 80vh;
-        background-size: 100vw 90vh;
-    }
-
-    .heroSection h1 {
-
-        margin-left: 35px;
-        width: 125%;
+        height: 85vh;
+        background-size: 100vw 80vh;
     }
 
     .heroSection h3 {
-        margin-left: 35px;
         width: 100%;
-
-    }
-
-    .heroTxt {
-        margin-top: -70%;
     }
 
     .logo {
@@ -407,28 +396,32 @@ button:hover::before {
 
     }
 
+    #mobileMenu {
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 60px;
+        cursor: pointer;
+
+    }
+
     .navToggle {
         display: block;
         position: absolute;
-        top: 0.5rem;
-        right: 0.5rem;
+        top: 1.5rem;
+        right: 1rem;
         z-index: 999;
         background: none;
         transform: skew(0deg);
     }
 
     .navToggle::before {
-
         z-index: 999;
         background: none;
     }
 
     #larry {
-        position: absolute;
-        top: 7%;
-        left: -5%;
-        height: auto;
-        width: 50vw;
+        display: none;
     }
 
     .skillsSection h2 {
