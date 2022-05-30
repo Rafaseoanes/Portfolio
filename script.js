@@ -98,3 +98,9 @@ navToggle.addEventListener('click', () => {
         navBar.setAttribute('data-visible', false);
     }
 });
+window.addEventListener("scroll", function () {
+    const show = navBar.getAttribute('data-visible')
+    if (show === "true") {
+        navBar.setAttribute('data-visible', false);
+    }
+});

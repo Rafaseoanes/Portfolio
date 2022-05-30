@@ -98,10 +98,11 @@ nav ul li a:hover {
 
 .heroSection h1 {
 
-    width: 105%;
+    width: 115%;
     font-style: normal;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+    ;
     color: #675791;
     z-index: 2;
 }
@@ -111,9 +112,10 @@ nav ul li a:hover {
 }
 
 .heroSection h3 {
+    width: 115%;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.5vw, 2rem);
     line-height: 29px;
     color: #675791;
     z-index: 2;
@@ -329,53 +331,11 @@ button:hover::before {
     margin: 0;
 }
 
-/*
-
-@media (max-width: 40rem) {
-
-
-    .cards1 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-    }
-
-    .cards2 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-    }
-
-    .heroSection {
-        padding: 2%;
-    }
-
-    .heroSection h3 {
-
-        font-size: 1rem;
-    }
-    .heroSection h1 {
-
-        font-size: 2rem;
-    }
-
-    #larry {
-        height: 45vh;
-    }
-
-    .skillsIcons {
-        margin: 10vh 0 5vh 0;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
-    }
-
-    .skillsIcons img {
-        width: 65px;
-    }
-}*/
-
 @media (max-width: 40em) {
+    body {
+        overflow-x: hidden !important;
+    }
+
     .navBar nav {
         position: fixed;
         inset: 0 0 0 30%;
@@ -386,6 +346,7 @@ button:hover::before {
 
         transform: translateX(100%);
         transition: transform 350ms ease-out;
+
     }
 
     .navBar nav[data-visible="true"] {
@@ -401,7 +362,27 @@ button:hover::before {
     }
 
     .heroSection {
-        padding-top: 20%;
+
+        background-position: center top;
+        padding-top: 0;
+        height: 80vh;
+        background-size: 100vw 90vh;
+    }
+
+    .heroSection h1 {
+
+        margin-left: 35px;
+        width: 125%;
+    }
+
+    .heroSection h3 {
+        margin-left: 35px;
+        width: 100%;
+
+    }
+
+    .heroTxt {
+        margin-top: -70%;
     }
 
     .logo {
@@ -429,8 +410,8 @@ button:hover::before {
     .navToggle {
         display: block;
         position: absolute;
-        top: 1rem;
-        right: 2rem;
+        top: 0.5rem;
+        right: 0.5rem;
         z-index: 999;
         background: none;
         transform: skew(0deg);
@@ -442,8 +423,51 @@ button:hover::before {
         background: none;
     }
 
+    #larry {
+        position: absolute;
+        top: 7%;
+        left: -5%;
+        height: auto;
+        width: 50vw;
+    }
 
+    .skillsSection h2 {
+        margin-top: 4vh;
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1.6rem;
 
+    }
 
+    .skillsIcons {
+        margin: 10vh 0 5vh 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .skillsIcons img {
+        width: 65px;
+    }
+
+    .cards1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+    .cards2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+    .contactLinks {
+        margin-top: 8vh;
+    }
+
+    .contactLinks h2 {
+        font-size: 1.2rem;
+    }
 
 }
