@@ -199,7 +199,7 @@ nav ul li a:hover {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-    padding: 3rem
+
 }
 
 .projectCards img {
