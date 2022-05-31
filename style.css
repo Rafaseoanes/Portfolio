@@ -183,6 +183,7 @@ nav ul li a:hover {
     padding: 0 0 8vh 0;
     min-height: 100vh;
     background-color: #fff;
+    width: 100vw;
 
 }
 
@@ -282,6 +283,7 @@ button:hover::before {
 .contactSection {
     min-height: 35vh;
     padding-top: 5vh;
+    width: 100vw;
 
 }
 
@@ -373,7 +375,7 @@ button:hover::before {
         .navBar nav {
             background: #110b4465;
             backdrop-filter: blur(1rem);
-
+            -webkit-backdrop-filter: blur(10px);
         }
     }
 
