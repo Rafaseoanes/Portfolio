@@ -206,21 +206,6 @@ nav ul li a:hover {
     margin-top: 15px;
 }
 
-/*
-.cards1 {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 17vw;
-}
-
-.cards2 {
-    margin-top: 6vh;
-    display: flex;
-    justify-content: space-around;
-    padding: 0 17vw;
-}
-*/
-
 .cardTitle {
     margin-top: 15px;
     color: #675791;
