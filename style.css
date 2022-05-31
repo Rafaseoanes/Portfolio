@@ -152,6 +152,7 @@ nav ul li a:hover {
 }
 
 .projectCards {
+    margin: 0;
     text-align: center;
     width: 320px;
     height: 390px;
@@ -182,17 +183,30 @@ nav ul li a:hover {
     padding: 0 0 8vh 0;
     min-height: 100vh;
     background-color: #fff;
+
+}
+
+.cardsWraper {
+    display: flex;
+    justify-content: center;
+
 }
 
 .cardsBox {
-    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    padding: 3rem
 }
 
-.cardsBox img {
+.projectCards img {
     width: 280px;
     margin-top: 15px;
 }
 
+/*
 .cards1 {
     display: flex;
     justify-content: space-around;
@@ -205,6 +219,7 @@ nav ul li a:hover {
     justify-content: space-around;
     padding: 0 17vw;
 }
+*/
 
 .cardTitle {
     margin-top: 15px;
@@ -443,24 +458,35 @@ button:hover::before {
         width: 65px;
     }
 
-    .cards1 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
+    .cardsWraper {
+        display: flex;
+        justify-content: center;
+
     }
 
-    .cards2 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
+    .cardsBox {
+        display: block;
+    }
+
+    .projectCards {
+        margin-bottom: 25px;
+    }
+
+    .projectCards:hover {
+        box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.07);
+        transform: none;
+
     }
 
     .contactLinks {
-        margin-top: 8vh;
+        margin-top: 10vh;
     }
 
     .contactLinks h2 {
         font-size: 1.2rem;
     }
 
+    .contactSection {
+        padding-top: 2vh;
+    }
 }
