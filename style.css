@@ -185,6 +185,7 @@ nav ul li a:hover {
 }
 
 .cardsWraper {
+    margin-top: 2.5rem;
     display: flex;
     justify-content: center;
 
